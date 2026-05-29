@@ -1,0 +1,45 @@
+{
+  "name": "context-mesh",
+  "version": "0.1.0",
+  "description": "A local memory layer for switching between CLI-based AI coding agents.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Zacky Algiffari",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackyalgiffari/context-mesh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zackyalgiffari/context-mesh/issues"
+  },
+  "homepage": "https://github.com/zackyalgiffari/context-mesh#readme",
+  "bin": {
+    "mesh": "./dist/src/cli.js"
+  },
+  "files": [
+    "dist/src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "check": "npm run build",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "codex",
+    "claude",
+    "context",
+    "memory"
+  ]
+}

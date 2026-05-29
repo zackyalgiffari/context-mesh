@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.mesh/
+*.tgz
+
+# Private roadmap — not for public repo
+plan.md
